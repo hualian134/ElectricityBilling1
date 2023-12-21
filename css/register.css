@@ -1,0 +1,24 @@
+body{
+    padding: 50px;
+    
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 35px;
+    font-weight:bold;
+    color:#686de0;
+    text-shadow: 2px 4px gold;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    box-shadow: #686de0 0px 7px 29px 0px;
+}
+
+.group{
+    margin-bottom: 30px;
+}
