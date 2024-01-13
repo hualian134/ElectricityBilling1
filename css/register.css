@@ -1,8 +1,8 @@
+/*Sign up login border*/
 body{
-    padding: 50px;
-    
+    padding: 60px;
+    margin: auto;
 }
-
 h1{
     text-align: center;
     padding-bottom: 35px;
@@ -11,7 +11,9 @@ h1{
     text-shadow: 2px 4px gold;
 }
 
+
 .container{
+    padding-top:50px;
     max-width: 600px;
     margin: auto;
     padding: 50px;

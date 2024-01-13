@@ -1,4 +1,4 @@
-<?php include("modules/menu.php")?>
+<?php include("modules/menu.php");?>
     <!--content -->
         <div class="content">
             <div class="wrapper">

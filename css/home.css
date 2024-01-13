@@ -18,13 +18,17 @@
 }
 
 /*css for menu*/
+.menu{
+    padding: 1%;
+
+}
 .menu ul{
     list-style-type: none;
     font-weight: bold;
 }
 
 .menu ul li{
-    padding:0 10px;
+    padding:2px 10px;
     display:inline;
     
 }
@@ -32,9 +36,10 @@
 .menu ul li a{
     text-decoration: none;
     color:azure;
-    background-color: #30336b;
+    background-color: #151fe2;
 }
 
 .menu ul li a:hover{
     background-color: #130f40;
 }
+
