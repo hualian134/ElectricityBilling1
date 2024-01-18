@@ -27,7 +27,7 @@
                     <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
         
                 </div>
-            </div>
+           
             <div class="group">
                 <input type="password" class="form-control" name="password" placeholder="Password">
             </div>

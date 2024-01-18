@@ -1,4 +1,5 @@
 <?php 
+     $error=array();
         if(isset($_POST["login"])) {
 
             $email=$_POST["email"];
@@ -10,15 +11,15 @@
             if($user){
                 
                 if($password==$user["password"]){
-                    header("Location : index.php");
+                    header("Location : home.php");
                     die();
                 }
                 else{
-                    echo "<div class='alert alert-danger'>Password does not match!</div>";
+                   array_push($error,"Password does not match!");
                 };
             }
             else{
-                echo"<div class='alert alert-danger'>Email does not match!</div>";
+                array_push($error,"Email does not match!");
             }
         }
 ?>

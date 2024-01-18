@@ -12,8 +12,14 @@ include("sub/login.php")?>
 <body>
 <div class="container">
         <h1>Login</h1>
-        <?php ?>
-        <form action="adminLogin.php" method="post">
+        <?php
+        if(isset($error)){
+                foreach($error as $msg){
+                    echo "<div class='alert alert-danger'>$msg</div>";
+                }
+            }?>
+
+        <form action="index.php" method="post">
            
             <div class="group">
                 <input type="email" class="form-control" name="email" placeholder="example@gmail.com">

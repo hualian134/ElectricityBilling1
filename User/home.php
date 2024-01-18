@@ -1,17 +1,7 @@
-<?php include("modules/menu.php");?>
-    <!--content -->
-        <div class="content">
-            <div class="wrapper">
-                Content
-            </div>
+<?php 
+    session_start();
+    include("includes/header.php");?>
+    <h1>Hello, world!</h1>
 
-        </div>
-    <!--footer-->
-        <div class="footer">
-            <div class="wrapper">
-                footer
-            </div>
-        </div>
-        
-</body>
-</html>
+    <!-- Optional JavaScript; choose one of the two! -->
+<?php include("includes/footer.php");?>

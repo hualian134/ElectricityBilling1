@@ -1,4 +1,6 @@
 <?php   
+    session_start();
+
     $error=array();
         if(isset($_POST["login"])) {
 
@@ -9,10 +11,16 @@
             $sqlAdmin="SELECT * FROM admin WHERE email='$email'";
             $result = mysqli_query($con,$sql);
             $user=mysqli_fetch_array($result,MYSQLI_ASSOC);
+            $username=$user['name'];
+            $useremail=$user['email'];
             if($user){
                 
                 if($password==$user["password"]){
                     header("location: http://localhost:3000/User/home.php");
+                    $_SESSION['user']=[
+                        'name'=>$username,
+                        'email'=>$useremail
+                    ];
                     die("process complete but is not right");
                 }
                 else{
