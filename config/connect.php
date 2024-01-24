@@ -4,7 +4,7 @@
     $password= "";
     $dbName="ebill";
     
-    $con=mysqli_connect("localhost","root","","ebill");
+    $con=mysqli_connect("localhost","root","","electricityBilling");
      
        
 ?>

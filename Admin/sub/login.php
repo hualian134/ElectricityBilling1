@@ -1,4 +1,5 @@
 <?php 
+    session_start();
      $error=array();
         if(isset($_POST["login"])) {
 
@@ -8,10 +9,12 @@
             $sql = "SELECT * FROM admin WHERE email='$email'";
             $result = mysqli_query($con,$sql);
             $user=mysqli_fetch_array($result,MYSQLI_ASSOC);
+            $_SESSION['admin']=$user['name'];
             if($user){
                 
                 if($password==$user["password"]){
-                    header("Location : home.php");
+                    header('Location: home.php');
+                    echo "Login";
                     die();
                 }
                 else{
