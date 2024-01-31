@@ -8,7 +8,6 @@
             $password=md5($_POST["password"]);
 
             $sql = "SELECT * FROM user WHERE email='$email'";
-            $sqlAdmin="SELECT * FROM admin WHERE email='$email'";
             $result = mysqli_query($con,$sql);
             $user=mysqli_fetch_array($result,MYSQLI_ASSOC);
             $username=$user['name'];

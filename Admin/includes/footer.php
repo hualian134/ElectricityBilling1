@@ -1,5 +1,5 @@
 <footer class="footer pt-5">
-    <div class="container-fluid">
+    <!--<div class="container-fluid">
       <div class="row align-items-center justify-content-lg-between">
         <div class="col-lg-12">
           <ul class="nav nav-footer justify-content-center justify-content-lg-end">
@@ -18,7 +18,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>!-->
 </footer>
     </main>
 

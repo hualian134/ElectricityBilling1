@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -42,4 +42,14 @@ body {
   #billResult {
     font-weight: bold;
   }
-  
+*/
+  table,th,td{
+    width: 1200px;
+    border: 1px solid ;
+    border-collapse: collapse;
+    margin:auto;
+    text-align: center;
+    background-color:#343a40;
+    color:#d63384;
+    font-size: 1.2em;
+  }

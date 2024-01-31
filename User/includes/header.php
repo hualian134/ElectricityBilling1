@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="../css/style.css">
     <title>Hello, world!</title>
   </head>
   <body>
