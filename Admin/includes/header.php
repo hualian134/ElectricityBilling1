@@ -1,3 +1,6 @@
+<?php include("../config/connect.php");
+      include("sub/functions.php");
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 

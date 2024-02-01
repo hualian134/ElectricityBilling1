@@ -1,5 +1,5 @@
-<?php include("../config/connect.php");?>
- <?php   include("modules/loginFunction.php");?> 
+<?php include("../config/connect.php");
+ include("modules/loginFunction.php");?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,8 +33,8 @@
             </div>
         
             <div class="group">
-                <input type="submit" class="btn btn-primary" value="Login" name="login">        
-                Forget Password?
+                <input type="submit" class="btn btn-primary"  value="Login" name="login">        
+                
             </div>
         </form>
 

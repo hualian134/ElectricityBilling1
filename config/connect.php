@@ -1,8 +1,8 @@
 <?php 
-    $sever="localhost";
+  /*  $sever="localhost";
     $userName="root";
     $password= "";
-    $dbName="ebill";
+    $dbName="ebill";*/
     
     $con=mysqli_connect("localhost","root","","electricityBilling");
      

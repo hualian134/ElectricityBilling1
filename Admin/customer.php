@@ -2,20 +2,35 @@
 
 ?>
 <table>
-    <tr>
-        <th>No</th>
-        <th>Name</th>
-        <th>Meter Id</th>
-        <th>Gmail</th>
-        <th>Edit</th>
-    <tr>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Meter Id</th>
+            <th>Gmail</th>
+            <th>Edit</th>
+        <tr>
+    </thead>
+    </tbody>
+    <?php 
+        $customer=getAll('user');
+
+        if(mysqli_num_rows($customer)>0){
+            $num=0;
+            foreach($customer as $c){
+                
+                ?>
+                    <tr>
+                        <td><?=$_SESSION['num']=++$num?></td>
+                        <td><?=$c['name']?></td>
+                        <td><?=$c['id']?></td>
+                        <td><?=$c['email']?></td>
+                        <td><i class="material-icons opacity-10">delete</i></td>
+                    </tr>
+    <?php
+                }
+        }
+    ?>
     
-    
-    <tr>
-        <td>1</td>
-        <td>$user['name']</td>
-        <td>1</td>
-        <td>zaw134@gmail.com</td>
-        <td><i class="material-icons opacity-10">delete</i></td>
-    </tr>
+    </tbody>
 </table>

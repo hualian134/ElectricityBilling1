@@ -1,7 +1,6 @@
 <?php 
     include("../config/connect.php");
-?> 
-<?php require_once("modules/signupFunction.php");?>\
+ require_once("modules/signupFunction.php");?>\
 <!DOCTYPE html>
 <html lang="en">
 <head>
